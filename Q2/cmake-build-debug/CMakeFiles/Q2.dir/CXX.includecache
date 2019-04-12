@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kasra/AP_Proj/HW3/Q2/dVector.cpp
+dVector.h
+/home/kasra/AP_Proj/HW3/Q2/dVector.h
+iostream
+-
+cmath
+-
+
+/home/kasra/AP_Proj/HW3/Q2/dVector.h
+
+/home/kasra/AP_Proj/HW3/Q2/main.cpp
+iostream
+-
+utility
+-
+dVector.h
+/home/kasra/AP_Proj/HW3/Q2/dVector.h
+

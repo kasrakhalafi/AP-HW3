@@ -1,0 +1,3 @@
+/home/kasra/AP_Proj/HW3/Q2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kasra/AP_Proj/HW3/Q2/cmake-build-debug/CMakeFiles/Q2.dir
+/home/kasra/AP_Proj/HW3/Q2/cmake-build-debug/CMakeFiles/edit_cache.dir

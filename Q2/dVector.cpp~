@@ -1,0 +1,78 @@
+#include"dVector.h"
+#include<iostream>
+#include<cmath>
+
+void dVector::push_back(int a){
+  int* arrPrime;
+  arrPrime = new int[cnt-1];
+  for(int i{} ; i < cnt - 1 ; i++)
+    {
+      arrPrime[i] = array[i];
+    }
+  delete array;
+  array = new int[cnt];
+  for(int i{} ; i < cnt - 1 ; i++)
+    {
+      array[i] = arrPrime[i];
+    }
+  array[cnt] = a;
+  delete arrPrime;
+  cnt++;
+}
+
+void dVector::pop_back(){
+  int* arrPrime;
+  arrPrime = new int[cnt-1];
+  for(int i{} ; i < cnt - 1 ; i++)
+    {
+      arrPrime[i] = array[i];
+    }
+  delete array;
+  array = new int[cnt-1];
+  for(int i{} ; i < cnt - 1 ; i++)
+    {
+      array[i] = arrPrime[i];
+    }
+  delete arrPrime;
+  cnt--;
+}
+
+void size(){
+  // std::cout << (cnt-1) << std::endl;
+}
+
+int capacity(){
+  int temp{};
+  for(int i{} ; i < 50 ; i++)
+    {
+      if(cnt-1 < std::pow(2,i)){
+	temp = std::pow(2,i);
+	break;
+      }
+      }
+  return temp;
+}
+
+bool dVector::operator<(const dVector& dvec) const{
+  bool cond=true;
+  /*for(int i{} ; i < cnt-1 ; i++)
+    {
+      if(this[i] >= dvec.array[i])
+	cond = false;
+	}*/
+  return cond;
+  }
+
+dVector dVector::operator+(const dVector& dvec){
+  /*for(int i{} ; i < cnt-1 ; i++)
+    {
+      this[i] = this[i] + dvec.array[i];
+    }
+    return *this;*/
+}
+
+void show(){
+  /*for(int i{} ; i < cnt-1 ; i++)
+    std::cout << array[i] << " " ;
+    std::cout << std::endl;*/
+}
